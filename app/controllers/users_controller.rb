@@ -23,7 +23,6 @@ class UsersController < ApplicationController
   end
 
   private
-
   def user_params
     params.require(:user).permit(:name, :email) #Returns a hash that was the value of "name" and "email" from the value of "user" in params.
   end
